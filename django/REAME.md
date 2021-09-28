@@ -21,3 +21,8 @@ class ManyToManyModelManager(Manager.from_queryset(ManyToManyModelQuerySet)):
 
 - 해당 aggregate에 `distinct=True`를 넣어주자!
 - [관련자료](https://docs.djangoproject.com/en/3.2/topics/db/aggregation/#combining-multiple-aggregations)
+
+### cursor pagination
+
+- ordering 시 unique한 필드를 꼭 지정해주자
+- 안해주면 중복된 데이터가 나오거나 데
